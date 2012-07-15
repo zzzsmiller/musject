@@ -7,7 +7,7 @@
 	<groupId>com.smiller</groupId>
 	<artifactId>musject</artifactId>
 	<packaging>war</packaging>
-	<version>1.1</version>
+	<version>1.2</version>
 	<name>GWT Maven Archetype</name>
 
 	<properties>
@@ -56,7 +56,7 @@
 		<!-- Generate compiled stuff in the folder used for developing mode -->
 		<outputDirectory>${webappDirectory}/WEB-INF/classes</outputDirectory>
 
-		<finalName>${project.artifactId}${project.version}</finalName>
+		<finalName>${project.artifactId}_${project.version}</finalName>
 
 		<plugins>
 
@@ -115,7 +115,7 @@
 				<artifactId>tomcat7-maven-plugin</artifactId>
 				<version>2.0-beta-1</version>
 				<configuration>
-					<path>/${project.artifactId}-${project.version}</path>
+					<path>/${project.artifactId}-tom7-${project.version}</path>
 					<username>mvn</username>
 					<password>mvnpwd</password>
 				</configuration>
@@ -126,7 +126,7 @@
 				<version>1.1</version>
 				<configuration>
 					<url>http://localhost:8080/manager/html</url>
-					<path>/${project.artifactId}</path>
+					<path>/${project.artifactId}-${project.version}</path>
 					<username>mvn</username>
 					<password>mvnpwd</password>
 				</configuration>
