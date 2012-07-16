@@ -8,10 +8,10 @@
 	<display-name>musject - Spring + GWT</display-name>
 
 	<!-- Spring -->
-	<!-- <context-param>
+	<context-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>classpath:springContext.xml</param-value>
-	</context-param> -->
+		<param-value>/WEB-INF/springContext.xml</param-value>
+	</context-param>
 
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
