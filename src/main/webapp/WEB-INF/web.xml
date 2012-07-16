@@ -7,20 +7,30 @@
 
 	<display-name>musject - Spring + GWT</display-name>
 
+	<!-- Spring -->
+	<!-- <context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath:springContext.xml</param-value>
+	</context-param> -->
+
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+
 	<!-- Servlets -->
 	<servlet>
-		<servlet-name>greetServlet</servlet-name>
-		<servlet-class>com.smiller.musject.server.GreetingServiceImpl</servlet-class>
+		<servlet-name>springGwtRemoteServiceServlet</servlet-name>
+		<servlet-class>org.spring4gwt.server.SpringGwtRemoteServiceServlet</servlet-class>
 	</servlet>
 
 	<servlet-mapping>
-		<servlet-name>greetServlet</servlet-name>
-		<url-pattern>/Mus/greet</url-pattern>
+		<servlet-name>springGwtRemoteServiceServlet</servlet-name>
+		<url-pattern>/Mus/springGWTServices/*</url-pattern>
 	</servlet-mapping>
 
 	<!-- Default page to serve -->
 	<welcome-file-list>
-		<welcome-file>mus.html</welcome-file>
+		<welcome-file>index.html</welcome-file>
 	</welcome-file-list>
 
 </web-app>
