@@ -20,7 +20,7 @@
 
 	<!-- Default page to serve -->
 	<welcome-file-list>
-		<welcome-file>Mus.html</welcome-file>
+		<welcome-file>mus.html</welcome-file>
 	</welcome-file-list>
 
 </web-app>
