@@ -54,7 +54,7 @@ public class Mus implements EntryPoint {
 
 		// Add the nameField and sendButton to the RootPanel
 		// Use RootPanel.get() to get the entire body element
-		RootPanel.get("content").add(nameField);
+		RootPanel.get("leftPanel").add(nameField);
 		RootPanel.get("leftPanel").add(sendButton);
 		RootPanel header = RootPanel.get("header");
 		header.add(errorLabel);
@@ -83,7 +83,13 @@ public class Mus implements EntryPoint {
 		dialogVPanel.add(closeButton);
 		dialogBox.setWidget(dialogVPanel);
 
-		// Add a handler to close the DialogBox
+        /*Edit greetings*/
+        RootPanel content = RootPanel.get("content");
+
+
+
+
+        // Add a handler to close the DialogBox
 		closeButton.addClickHandler(new ClickHandler() {
 			public void onClick(ClickEvent event) {
 				dialogBox.hide();
