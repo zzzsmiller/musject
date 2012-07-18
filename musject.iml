@@ -49,7 +49,7 @@
     <facet type="Spring" name="Spring">
       <configuration>
         <fileset id="fileset1" name="Xml Application Context" removed="false">
-          <file>file://$MODULE_DIR$/src/main/webapp/WEB-INF/springContext.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/config/springContext.xml</file>
           <file>file://$MODULE_DIR$/target/musject_2.0/WEB-INF/springContext.xml</file>
         </fileset>
       </configuration>
