@@ -1,5 +1,6 @@
 package com.smiller.musject.client;
 
+import com.smiller.musject.client.form.EditGreetingForm;
 import com.smiller.musject.client.service.IntroduceServiceAsync;
 import com.smiller.musject.shared.FieldVerifier;
 import com.google.gwt.core.client.EntryPoint;
@@ -120,7 +121,8 @@ public class Mus implements EntryPoint {
 
 							@Override
 							public void onSuccess(String response) {
-								introduceLabel.setText(response);								
+								introduceLabel.setText(response);
+                                RootPanel.get("content").add(new EditGreetingForm());
 							}
 						});
 

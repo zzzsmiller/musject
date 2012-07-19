@@ -2,6 +2,8 @@ package com.smiller.musject.client.service;
 
 import java.util.List;
 
+import com.sencha.gxt.data.shared.loader.PagingLoadConfig;
+import com.sencha.gxt.data.shared.loader.PagingLoadResult;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 
@@ -24,4 +26,5 @@ public interface IntroduceService extends RemoteService{
 	
 	List<Greeting> getAll();
 
+    PagingLoadResult<Greeting> getGreetings(PagingLoadConfig loadConfig);
 }

@@ -2,18 +2,20 @@ package com.smiller.musject.server;
 
 import java.util.List;
 
+import com.sencha.gxt.data.shared.loader.PagingLoadConfig;
+import com.sencha.gxt.data.shared.loader.PagingLoadResult;
+import com.smiller.musject.server.persistence.GreetingMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
 import com.smiller.musject.client.service.IntroduceService;
-import com.smiller.musject.server.persistence.GreetingMapper;
 import com.smiller.musject.shared.entity.Greeting;
 
 @Controller("introduceService")
 public class IntroduceServiceImpl implements IntroduceService {
 	
 	@Autowired
-	GreetingMapper greetingDao;
+    GreetingMapper greetingDao;
 
 	@Override
 	public String greet(String name) {
@@ -45,5 +47,10 @@ public class IntroduceServiceImpl implements IntroduceService {
 	public List<Greeting> getAll() {
 		return greetingDao.getAll();
 	}
+
+    @Override
+    public PagingLoadResult<Greeting> getGreetings(PagingLoadConfig loadConfig) {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
 
 }

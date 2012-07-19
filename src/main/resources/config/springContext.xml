@@ -27,7 +27,7 @@
 	</bean>
 
     <!--myBatis-->
-	<bean id="mapperConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<property name="basePackage" value="com.smiller.musject.server.persistence" />
 	</bean>
 
