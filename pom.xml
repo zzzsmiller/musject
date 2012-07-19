@@ -105,7 +105,11 @@
 				<configuration>
 					<runTarget>Mus.html</runTarget>
 					<hostedWebapp>${webappDirectory}</hostedWebapp>
-					<i18nMessagesBundle>com.smiller.musject.client.Messages</i18nMessagesBundle>
+                    <i18nMessagesBundles>
+                        <i18nMessagesBundle>com.smiller.musject.client.Messages</i18nMessagesBundle>
+                        <i18nMessagesBundle>com.smiller.musject.messages.formtitles.EditGreetingsMessages</i18nMessagesBundle>
+                    </i18nMessagesBundles>
+
 				</configuration>
 			</plugin>
 

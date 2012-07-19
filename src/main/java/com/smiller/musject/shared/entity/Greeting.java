@@ -1,6 +1,7 @@
 package com.smiller.musject.shared.entity;
 
 import java.io.Serializable;
+import java.util.Date;
 
 public class Greeting implements Serializable {
 
@@ -11,6 +12,8 @@ public class Greeting implements Serializable {
 	private String author;
 
 	private String text;
+
+    private Date date;
 
 	public Integer getId() {
 		return id;
@@ -36,10 +39,21 @@ public class Greeting implements Serializable {
 		this.text = text;
 	}
 
-	@Override
-	public String toString() {
-		return "Greeting [id=" + id + ", author=" + author + ", text=" + text
-				+ "]";
-	}
+    public Date getDate() {
+        return date;
+    }
 
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    @Override
+    public String toString() {
+        return "Greeting{" +
+                "id=" + id +
+                ", author='" + author + '\'' +
+                ", text='" + text + '\'' +
+                ", date=" + date +
+                '}';
+    }
 }
