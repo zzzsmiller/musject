@@ -1,8 +1,8 @@
 package com.smiller.musject.server;
 
+import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 import com.smiller.musject.client.GreetingService;
 import com.smiller.musject.shared.FieldVerifier;
-import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 
 /**
  * The server side implementation of the RPC service.

@@ -1,11 +1,10 @@
 package com.smiller.musject.server.persistence;
 
-import java.util.List;
-
+import com.smiller.musject.shared.entity.Greeting;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 
-import com.smiller.musject.shared.entity.Greeting;
+import java.util.List;
 
 
 public interface GreetingMapper {

@@ -7,12 +7,12 @@
     <groupId>com.smiller</groupId>
     <artifactId>musject</artifactId>
     <packaging>war</packaging>
-    <version>2.4</version>
+    <version>2.7</version>
     <name>Musject</name>
 
     <properties>
         <!-- Convenience property to set the GWT version -->
-        <gwtVersion>2.4.0</gwtVersion>
+        <gwtVersion>2.2.0</gwtVersion>
         <!-- GWT needs at least java 1.5 -->
         <webappDirectory>${project.build.directory}/${project.build.finalName}</webappDirectory>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

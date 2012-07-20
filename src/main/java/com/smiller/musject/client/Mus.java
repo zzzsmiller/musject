@@ -1,23 +1,9 @@
 package com.smiller.musject.client;
 
-import com.smiller.musject.client.form.EditGreetingForm;
-import com.smiller.musject.client.service.IntroduceServiceAsync;
-import com.smiller.musject.shared.FieldVerifier;
+import com.extjs.gxt.ui.client.widget.Label;
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.event.dom.client.ClickEvent;
-import com.google.gwt.event.dom.client.ClickHandler;
-import com.google.gwt.event.dom.client.KeyCodes;
-import com.google.gwt.event.dom.client.KeyUpEvent;
-import com.google.gwt.event.dom.client.KeyUpHandler;
-import com.google.gwt.user.client.rpc.AsyncCallback;
-import com.google.gwt.user.client.ui.Button;
-import com.google.gwt.user.client.ui.DialogBox;
-import com.google.gwt.user.client.ui.HTML;
-import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.RootPanel;
-import com.google.gwt.user.client.ui.TextBox;
-import com.google.gwt.user.client.ui.VerticalPanel;
 
 /**
  * Entry point classes define <code>onModuleLoad()</code>.
@@ -45,7 +31,8 @@ public class Mus implements EntryPoint {
 	 */
     @Override
     public void onModuleLoad() {
-        //To change body of implemented methods use File | Settings | File Templates.
+        RootPanel.get().add(new Label("test gxt"));
+        RootPanel.get().add(new com.google.gwt.user.client.ui.Label("test gwt"));
     }
 
 
