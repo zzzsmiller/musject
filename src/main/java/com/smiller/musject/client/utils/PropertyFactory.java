@@ -1,8 +1,5 @@
 package com.smiller.musject.client.utils;
 
-import com.google.gwt.core.client.GWT;
-import com.smiller.musject.client.form.GreetingProperties;
-
 /**
  * Created with IntelliJ IDEA.
  * User: musatov
@@ -12,12 +9,12 @@ import com.smiller.musject.client.form.GreetingProperties;
  */
 public class PropertyFactory {
 
-    private static GreetingProperties greetingProperties;
+    /*private static GreetingProperties greetingProperties;
 
     public static GreetingProperties getGreetingProperties() {
         if (greetingProperties == null) {
             greetingProperties = GWT.create(GreetingProperties.class);
         }
         return greetingProperties;
-    }
+    }*/
 }

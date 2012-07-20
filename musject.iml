@@ -56,7 +56,7 @@
     </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6" inherit-compiler-output="false">
-    <output url="file://$MODULE_DIR$/target/musject_2.2/WEB-INF/classes" />
+    <output url="file://$MODULE_DIR$/target/musject_2.4/WEB-INF/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
@@ -68,7 +68,7 @@
       <excludeFolder url="file://$MODULE_DIR$/target/.generated" />
       <excludeFolder url="file://$MODULE_DIR$/target/gwt-unitCache" />
       <excludeFolder url="file://$MODULE_DIR$/target/maven-archiver" />
-      <excludeFolder url="file://$MODULE_DIR$/target/musject_2.2" />
+      <excludeFolder url="file://$MODULE_DIR$/target/musject_2.1" />
       <excludeFolder url="file://$MODULE_DIR$/target/test-classes" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
@@ -95,7 +95,7 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-tx:3.1.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-jdbc:3.1.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.21" level="project" />
-    <orderEntry type="library" name="Maven: com.extjs:gxt:2.2.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.extjs:gxt:2.2.0" level="project" />
   </component>
 </module>
 

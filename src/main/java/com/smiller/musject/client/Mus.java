@@ -43,7 +43,16 @@ public class Mus implements EntryPoint {
 	/**
 	 * This is the entry point method.
 	 */
-	public void onModuleLoad() {
+    @Override
+    public void onModuleLoad() {
+        //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+
+
+
+
+    /*public void onModuleLoad() {
 		final Button sendButton = new Button(messages.sendButton());
 		final TextBox nameField = new TextBox();
 		nameField.setText(messages.nameField());
@@ -84,7 +93,7 @@ public class Mus implements EntryPoint {
 		dialogVPanel.add(closeButton);
 		dialogBox.setWidget(dialogVPanel);
 
-        /*Edit greetings*/
+        *//*Edit greetings*//*
         RootPanel content = RootPanel.get("content");
 
 
@@ -101,9 +110,9 @@ public class Mus implements EntryPoint {
 
 		// Create a handler for the sendButton and nameField
 		class MyHandler implements ClickHandler, KeyUpHandler {
-			/**
+			*//**
 			 * Fired when the user clicks on the sendButton.
-			 */
+			 *//*
 			public void onClick(ClickEvent event) {
 				sendNameToServer();
 				greetTheGuy(nameField.getValue());
@@ -128,19 +137,19 @@ public class Mus implements EntryPoint {
 
 			}
 
-			/**
+			*//**
 			 * Fired when the user types in the nameField.
-			 */
+			 *//*
 			public void onKeyUp(KeyUpEvent event) {
 				if (event.getNativeKeyCode() == KeyCodes.KEY_ENTER) {
 					sendNameToServer();
 				}
 			}
 
-			/**
+			*//**
 			 * Send the name from the nameField to the server and wait for a
 			 * response.
-			 */
+			 *//*
 			private void sendNameToServer() {
 				// First, we validate the input.
 				errorLabel.setText("");
@@ -183,5 +192,5 @@ public class Mus implements EntryPoint {
 		MyHandler handler = new MyHandler();
 		sendButton.addClickHandler(handler);
 		nameField.addKeyUpHandler(handler);
-	}
+	}*/
 }
